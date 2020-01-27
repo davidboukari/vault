@@ -3,6 +3,13 @@
 
 ## Connexion
 
+```bash
+export VAULT_ADDR='http://127.0.0.1:8200'
+vault login 
+vault status
+vault list kv
+```
+
 ```bash 
 vault -autocomplete-install
 vault server -dev
