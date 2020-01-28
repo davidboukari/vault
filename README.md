@@ -7,13 +7,21 @@
 export VAULT_ADDR='http://127.0.0.1:8200'
 vault login 
 vault status
+
+# List the Tree 1st Level
 vault secrets list
 
-
-
+#Enable / Disable the engine /
 vault secrets enable kv
+
+# List a 
 vault kv list kv
+
+# Write a value in kv/hello
 vault write kv/hello mykey=myValue
+
+# Write a value in secret/hello
+vault kv put secret/hello foo=world excited=yes
 ```
 
 ```bash 
