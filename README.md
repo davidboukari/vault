@@ -7,6 +7,8 @@
 export VAULT_ADDR='http://127.0.0.1:8200'
 vault login 
 vault status
+vault secrets list
+
 vault list kv
 ```
 
@@ -16,6 +18,8 @@ vault server -dev
 export VAULT_ADDR='http://127.0.0.1:8200'
 export VAULT_DEV_ROOT_TOKEN_ID="abcde13455"
 vault status
+vault secrets list
+ 
 vault kv put secret/hello foo=world excited=yes
 ```
 
@@ -74,7 +78,7 @@ secret/       kv           kv_13ea7ed0           key/value secret storage
 sys/          system       system_f1c0ae95       system endpoints used for control, policy and debugging
 ```
 
-# List@ a tree 
+# List a tree 
 
 ```bash
 vault list kv
