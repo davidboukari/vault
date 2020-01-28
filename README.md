@@ -4,6 +4,7 @@
 
 ```bash
 vault server -dev
+vault server -dev -dev-listen-address=192.168.85.10:8200
 ```
 
 ## Connexion
