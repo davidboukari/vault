@@ -9,7 +9,11 @@ vault login
 vault status
 vault secrets list
 
-vault list kv
+
+
+vault secrets enable kv
+vault kv list kv
+vault write kv/hello mykey=myValue
 ```
 
 ```bash 
@@ -99,7 +103,7 @@ vault list kv
 # vault disable / enable engine
 
 ```bash
-vault secrets disable kv/
+vault secrets enable kv/
 vault secrets disable kv/
 ```
 
