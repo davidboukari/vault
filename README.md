@@ -19,8 +19,9 @@ vault secrets list
 #Enable / Disable the engine /
 vault secrets enable kv
 
-# List a 
+# List a path (kv, secret)
 vault kv list kv
+vault kv list secret
 
 # Write a value in kv/hello
 vault write kv/hello mykey=myValue
