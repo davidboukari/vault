@@ -1,5 +1,10 @@
 # vault
 
+## Starting the server in dev mode
+
+```bash
+vault server -dev
+```
 
 ## Connexion
 
